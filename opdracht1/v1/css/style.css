@@ -1,32 +1,93 @@
+@font-face {
+	font-family: "Beach Society Light";
+	src: url("../fonts/Beach-Society-Light.ttf");
+}
+
 body {
 	font-family: sans-serif;
 	height: 100%;
-	background-color: #dfe2e5;
+	background-color: #f6f6f6;
 	margin: 0;
 }
 
+main {
+	padding: 0 8em;
+}
+
 h1 {
-	font-size: 1em;
+	font-family: "Beach Society Light", Arial;
+	color: #090305;
+	font-size: 2.8em;
 	margin: 0;
-	padding: 1.3em 0;
+	margin-right: auto;
+	padding: 0.7em 0;
 }
 
 header {
 	display: flex;
-	height: 4em;
+	height: 7em;
 	width: 100%;
 	background-color: white;
 }
 
 header img {
-	width: 40px;
-	height: 30px;
-	padding: 1em;
+	width: 50px;
+	height: 40px;
+	padding: 2.2em 3.2em;
+}
+
+img {
+	height: 20em;
+	margin: 0.5em;
+	border-radius: 1em;
+}
+
+p,
+input,
+button {
+	font-family: "Avenir Next";
+	color: #9599a5;
+	font-size: 1.3em;
 }
 
 input {
-	padding: 0.8em;
+	margin: 1.6em;
+	margin-right: 10em;
+	padding: 0.4em 1em;
+	width: 16em;
+	background-color: #f6f6f6;
 	border-radius: 2em;
-	border-color: none;
-	padding:
+	border: none;
+}
+
+section:nth-of-type(1) {
+	display: flex;
+	margin: 1.5em;
+}
+
+section:last-of-type {
+	margin: 1em;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+button {
+	width: 5em;
+	height: 2em;
+	border-radius: 2em;
+	transition: all 1s;
+	margin: 0.6em 0.5em;
+}
+
+button:hover {
+	color: white;
+	background-color: #9599a5;
+}
+
+footer {
+	background-color: white;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 1em;
 }
