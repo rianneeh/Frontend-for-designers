@@ -22,52 +22,12 @@ function verwijderClass() {
 	}
 }
 
-function alleAfbeelding() {
-	var alleImg = document.querySelectorAll('#images img');
-	for (var j = 0; j < alleImg.length; j++) {
-		alleImg[j].classList.toggle('show');
-	}
-}
-
-function witAfbeelding() {
-	var witImg = document.querySelectorAll('.wit');
-	for (var b = 0; b < witImg.length; b++) {
-		witImg[b].classList.toggle('show');
-	}
-}
-
-function zwartAfbeelding() {
-	var zwartImg = document.querySelectorAll('.zwart');
-	for (var d = 0; d < zwartImg.length; d++) {
-		zwartImg[d].classList.toggle('show');
-	}
-}
-
-function paarsAfbeelding() {
-	var paarsImg = document.querySelectorAll('.paars');
-	for (var e = 0; e < paarsImg.length; e++) {
-		paarsImg[e].classList.toggle('show');
-	}
-}
-
-function blauwAfbeelding() {
-	var blauwImg = document.querySelectorAll('.blauw');
-	for (var f = 0; f < blauwImg.length; f++) {
-		blauwImg[f].classList.toggle('show');
-	}
-}
-
-function oranjeAfbeelding() {
-	var oranjeImg = document.querySelectorAll('.oranje');
-	for (var g = 0; g < oranjeImg.length; g++) {
-		oranjeImg[g].classList.toggle('show');
-	}
-}
-
-function groenAfbeelding() {
-	var groenImg = document.querySelectorAll('.groen');
-	for (var h = 0; h < groenImg.length; h++) {
-		groenImg[h].classList.toggle('show');
+function gekozenAfbeeldingen(sel) {
+	console.log(sel);
+	var gekozenImg = document.querySelectorAll(sel);
+	console.log(gekozenImg);
+	for (var b = 0; b < gekozenImg.length; b++) {
+		gekozenImg[b].classList.add('show');
 	}
 }
 
@@ -77,10 +37,24 @@ for (var i = 0; i < buttons.length; i++) {
 	buttons[i].addEventListener('click', verwijderClass);
 }
 
-buttons[0].addEventListener('click', alleAfbeelding);
-buttons[1].addEventListener('click', witAfbeelding);
-buttons[2].addEventListener('click', zwartAfbeelding);
-buttons[3].addEventListener('click', paarsAfbeelding);
-buttons[4].addEventListener('click', blauwAfbeelding);
-buttons[5].addEventListener('click', oranjeAfbeelding);
-buttons[6].addEventListener('click', groenAfbeelding);
+buttons[0].addEventListener('click', function () {
+	gekozenAfbeeldingen('#images img');
+});
+buttons[1].addEventListener('click', function () {
+	gekozenAfbeeldingen('.wit');
+});
+buttons[2].addEventListener('click', function () {
+	gekozenAfbeeldingen('.zwart');
+});
+buttons[3].addEventListener('click', function () {
+	gekozenAfbeeldingen('.paars');
+});
+buttons[4].addEventListener('click', function () {
+	gekozenAfbeeldingen('.blauw');
+});
+buttons[5].addEventListener('click', function () {
+	gekozenAfbeeldingen('.oranje');
+});
+buttons[6].addEventListener('click', function () {
+	gekozenAfbeeldingen('.groen');
+});

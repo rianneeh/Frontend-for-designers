@@ -15,69 +15,74 @@
 		</form>
 	</header>
 	<main>
-		<section id="sorteer">
-			<p>Sorteer op kleur:</p>
-			<button class="">Alles <img src="images/kruis.png" alt=""></button>
-			<button class="">wit <img src="images/kruis.png" alt=""></button>
-			<button class="">zwart <img src="images/kruis.png" class="" alt=""></button>
-			<button class="">paars <img src="images/kruis.png" class="" alt=""></button>
-			<button class="">blauw <img src="images/kruis.png" class="" alt=""></button>
-			<button class="">oranje <img src="images/kruis.png" class="" alt=""></button>
-			<button class="">groen <img src="images/kruis.png" class="" alt=""></button>
-		</section>
+		<p>Sorteer op kleur:</p>
+		<input type="checkbox" name="checkbox" id="alles_id" value="alles" checked="checked">
+		<label id="alles" for="alles_id">Alles <img src="images/kruis.png" alt=""></label>
+		<input type="checkbox" name="checkbox" id="wit_id" value="wit">
+		<label for="wit_id">Wit <img src="images/kruis.png" alt=""></label>
+		<input type="checkbox" name="checkbox" id="zwart_id" value="zwart">
+		<label for="zwart_id">Zwart <img src="images/kruis.png" alt=""></label>
+		<input type="checkbox" name="checkbox" id="paars_id" value="paars">
+		<label for="paars_id">Paars <img src="images/kruis.png" alt=""></label>
+		<input type="checkbox" name="checkbox" id="blauw_id" value="blauw">
+		<label for="blauw_id">Blauw <img src="images/kruis.png" alt=""></label>
+		<input type="checkbox" name="checkbox" id="oranje_id" value="oranje">
+		<label for="oranje_id">Oranje <img src="images/kruis.png" alt=""></label>
+		<input type="checkbox" name="checkbox" id="groen_id" value="groen">
+		<label for="groen_id">Groen <img src="images/kruis.png" alt=""></label>
 		<section id="images">
-			<img class="blauw show" src="images/blauw/bergen.jpg" alt="">
-			<img class="oranje show" src="images/oranje/bloem.jpg" alt="">
-			<img class="paars show" src="images/paars/galaxy.jpg" alt="">
-			<img class="groen show" src="images/groen/dak.jpg" alt="">
-			<img class="wit show" src="images/wit/berg.jpg" alt="">
-			<img class="blauw show" src="images/blauw/blauwebes.jpg" alt="">
-			<img class="zwart show" src="images/zwart/maan.jpg" alt="">
-			<img class="blauw show" src="images/blauw/bluequote.jpg" alt="">
-			<img class="groen show" src="images/groen/auto.jpg" alt="">
-			<img class="zwart show" src="images/zwart/bliksem.jpg" alt="">
-			<img class="wit show" src="images/wit/boom.jpg" alt="">
-			<img class="paars show" src="images/paars/lucht.jpg" alt="">
-			<img class="blauw show" src="images/blauw/bokeh.jpg" alt="">
-			<img class="groen show" src="images/groen/bloemen.jpg" alt="">
-			<img class="oranje show" src="images/oranje/danger.jpg" alt="">
-			<img class="blauw show" src="images/blauw/draaimolen.jpg" alt="">
-			<img class="wit show" src="images/wit/kerst.jpg" alt="">
-			<img class="groen show" src="images/groen/cactus.jpg" alt="">
-			<img class="blauw show" src="images/blauw/edelsteen.jpg" alt="">
-			<img class="wit show" src="images/wit/muur.jpg" alt="">
-			<img class="blauw show" src="images/blauw/fles.jpg" alt="">
-			<img class="oranje show" src="images/oranje/krijt.jpg" alt="">
-			<img class="paars show" src="images/paars/gebouw.jpg" alt="">
-			<img class="groen show" src="images/groen/kiwi.jpg" alt="">
-			<img class="oranje show" src="images/oranje/zon.jpg" alt="">
-			<img class="wit show" src="images/wit/schelp.jpg" alt="">
-			<img class="blauw show" src="images/blauw/lichtslinger.jpg" alt="">
-			<img class="blauw show" src="images/blauw/quote%20night.jpg" alt="">
-			<img class="groen show" src="images/groen/noorderlicht.jpg" alt="">
-			<img class="zwart show" src="images/zwart/qoute.jpg" alt="">
-			<img class="blauw show" src="images/blauw/santorini.jpg" alt="">
-			<img class="zwart show" src="images/zwart/weerkaats.jpg" alt="">
-			<img class="blauw show" src="images/blauw/straat.jpg" alt="">
-			<img class="oranje show" src="images/oranje/sap.jpg" alt="">
-			<img class="paars show" src="images/paars/girls.jpg" alt="">
-			<img class="groen show" src="images/groen/meisje.jpg" alt="">
-			<img class="paars show" src="images/paars/snoep.jpg" alt="">
-			<img class="zwart show" src="images/zwart/kerstboom.jpg" alt="">
-			<img class="wit show" src="images/wit/vliegtuig.jpg" alt="">
-			<img class="blauw show" src="images/blauw/water.jpg" alt="">
-			<img class="groen show" src="images/groen/snoep.jpg" alt="">
-			<img class="oranje show" src="images/oranje/lollies.jpg" alt="">
-			<img class="groen show" src="images/groen/steen.jpg" alt="">
-			<img class="paars show" src="images/paars/staaf.jpg" alt="">
-			<img class="oranje show" src="images/oranje/grot.jpg" alt="">
-			<img class="zwart show" src="images/zwart/gebouw.jpg" alt="">
-			<img class="oranje show" src="images/oranje/rook.jpg" alt="">
-			<img class="blauw show" src="images/blauw/galaxy.jpg" alt="">
-			<img class="wit show" src="images/wit/wolk.jpg" alt="">
-			<img class="oranje show" src="images/oranje/sinasappel.jpg" alt="">
-			<img class="wit show" src="images/wit/tak.jpg" alt="">
-			<img class="zwart show" src="images/zwart/licht.jpg" alt="">
+			<img class="blauw" src="images/blauw/bergen.jpg" alt="">
+			<img class="oranje" src="images/oranje/bloem.jpg" alt="">
+			<img class="paars" src="images/paars/galaxy.jpg" alt="">
+			<img class="groen" src="images/groen/dak.jpg" alt="">
+			<img class="wit" src="images/wit/berg.jpg" alt="">
+			<img class="blauw" src="images/blauw/blauwebes.jpg" alt="">
+			<img class="zwart" src="images/zwart/maan.jpg" alt="">
+			<img class="blauw" src="images/blauw/bluequote.jpg" alt="">
+			<img class="groen" src="images/groen/auto.jpg" alt="">
+			<img class="zwart" src="images/zwart/bliksem.jpg" alt="">
+			<img class="wit" src="images/wit/boom.jpg" alt="">
+			<img class="paars" src="images/paars/lucht.jpg" alt="">
+			<img class="blauw" src="images/blauw/bokeh.jpg" alt="">
+			<img class="groen" src="images/groen/bloemen.jpg" alt="">
+			<img class="oranje" src="images/oranje/danger.jpg" alt="">
+			<img class="blauw" src="images/blauw/draaimolen.jpg" alt="">
+			<img class="wit" src="images/wit/kerst.jpg" alt="">
+			<img class="groen" src="images/groen/cactus.jpg" alt="">
+			<img class="blauw" src="images/blauw/edelsteen.jpg" alt="">
+			<img class="wit" src="images/wit/muur.jpg" alt="">
+			<img class="blauw" src="images/blauw/fles.jpg" alt="">
+			<img class="oranje" src="images/oranje/krijt.jpg" alt="">
+			<img class="paars" src="images/paars/gebouw.jpg" alt="">
+			<img class="groen" src="images/groen/kiwi.jpg" alt="">
+			<img class="oranje" src="images/oranje/zon.jpg" alt="">
+			<img class="wit" src="images/wit/schelp.jpg" alt="">
+			<img class="blauw" src="images/blauw/lichtslinger.jpg" alt="">
+			<img class="blauw" src="images/blauw/quote%20night.jpg" alt="">
+			<img class="groen" src="images/groen/noorderlicht.jpg" alt="">
+			<img class="zwart" src="images/zwart/qoute.jpg" alt="">
+			<img class="blauw" src="images/blauw/santorini.jpg" alt="">
+			<img class="zwart" src="images/zwart/weerkaats.jpg" alt="">
+			<img class="blauw" src="images/blauw/straat.jpg" alt="">
+			<img class="oranje" src="images/oranje/sap.jpg" alt="">
+			<img class="paars" src="images/paars/girls.jpg" alt="">
+			<img class="groen" src="images/groen/meisje.jpg" alt="">
+			<img class="paars" src="images/paars/snoep.jpg" alt="">
+			<img class="zwart" src="images/zwart/kerstboom.jpg" alt="">
+			<img class="wit" src="images/wit/vliegtuig.jpg" alt="">
+			<img class="blauw" src="images/blauw/water.jpg" alt="">
+			<img class="groen" src="images/groen/snoep.jpg" alt="">
+			<img class="oranje" src="images/oranje/lollies.jpg" alt="">
+			<img class="groen" src="images/groen/steen.jpg" alt="">
+			<img class="paars" src="images/paars/staaf.jpg" alt="">
+			<img class="oranje" src="images/oranje/grot.jpg" alt="">
+			<img class="zwart" src="images/zwart/gebouw.jpg" alt="">
+			<img class="oranje" src="images/oranje/rook.jpg" alt="">
+			<img class="blauw" src="images/blauw/galaxy.jpg" alt="">
+			<img class="wit" src="images/wit/wolk.jpg" alt="">
+			<img class="oranje" src="images/oranje/sinasappel.jpg" alt="">
+			<img class="wit" src="images/wit/tak.jpg" alt="">
+			<img class="zwart" src="images/zwart/licht.jpg" alt="">
 		</section>
 	</main>
 	<footer>
