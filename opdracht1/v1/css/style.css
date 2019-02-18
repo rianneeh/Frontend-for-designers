@@ -78,18 +78,19 @@ input[type=checkbox] {
 
 label {
 	position: relative;
+	display: inline-flex;
 	background-color: white;
-	padding: 0.6em 1.5em;
+	padding: 0.8em 2em;
 	border: 0.5px solid #9599a5;
 	border-radius: 2em;
 	transition: all 0.65s;
-	margin: 2em 1em;
+	margin: 1em 2em;
 }
 
 label:hover {
 	color: white;
 	background-color: #9599a5;
-	padding: 0.4em 2em;
+	padding: 0.8em 2em;
 }
 
 label > img {
@@ -102,7 +103,7 @@ label > img {
 }
 
 input[type=checkbox]:checked + label {
-	padding: 0.6em 2em;
+	padding: 0.8em 2.5em;
 	color: white;
 	background-color: #9599a5;
 }
@@ -192,6 +193,9 @@ footer {
 
 	label {
 		padding: 0.2em 1em;
+		display: inline;
+		margin: 1em;
+
 	}
 
 	label:hover {
