@@ -14,4 +14,4 @@ In de tweede les heb ik samen met Vera mijn eerste demo getest (deze heb ik hela
  
  Deze feedback heb ik verwerkt in mijn eerste volledige versie.
  
-[Demo 1 voor opdracht 1](https://rianneeh.github.io/frontendvoordesigners/opdracht1/v1/index.html)
+[Demo 1 voor opdracht 1](https://rianneeh.github.io/Frontend-for-designers/opdracht1/v1/index.html)
