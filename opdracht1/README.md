@@ -7,6 +7,7 @@ Ik heb mijn ontwerp gemaakt zodat hij te gebruiken is op zowel laptop als mobiel
 Voor mijn eerste versie heb ik gebruik gemaakt van buttons met verschillende classes en elke image heb ik een class gegeven van de kleur waar hij toe behoorde. Doormiddel van javascript regelde ik dat als er op een button geklikt werd, de class hide van images werd verwijderd(display: none) en de class(display: show) show werd toegevoegd. Maar op deze manier kon je niet meerdere kleuren tegelijk weergeven, omdat als je op een andere button klikte alle andere kleuren weer op display:none gingen.
  - Dit was een probleem waar ik tegen aan liep, hier moest ik een andere oplossing voor bedenken.
 
+
 In de tweede les heb ik samen met Vera mijn eerste versie getest, hierbij had ze voor mij de volgende feedback:
  + Leuk dat de knopjes echt groter en kleiner worden als je erop klikt.
  + Doordat zowel de knoppen als de afbeeldingen een borderradius hebben vormt het een geheel.
