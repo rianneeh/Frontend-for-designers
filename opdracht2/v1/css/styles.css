@@ -20,16 +20,19 @@ header {
 section {
 	width: 65%;
 	margin: 0 auto;
-	transition: all 1s ease;
 	position: relative;
 }
 
 img {
-	display: none;
+	height: 0;
+	opacity: 0;
+	transition: opacity 1s ease-out;
+	overflow: hidden;
 }
 
-.show {
-	display: block;
+img.show {
+	height: auto;
+	opacity: 1;
 }
 
 a {
