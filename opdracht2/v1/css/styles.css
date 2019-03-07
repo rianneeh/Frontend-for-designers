@@ -1,3 +1,5 @@
+/*generieke stijl*/
+
 body {
 	margin: 0;
 }
@@ -17,23 +19,22 @@ header {
 	margin: 0;
 }
 
-section {
-	width: 65%;
-	margin: 0 auto;
-	position: relative;
-}
-
 img {
+	max-width: 100%;
 	height: 0;
 	opacity: 0;
 	transition: opacity 1s ease-out;
 	overflow: hidden;
 }
 
+/*als de img weergeven word krijgt hij de class show*/
+
 img.show {
 	height: auto;
 	opacity: 1;
 }
+
+/*de verder en terug knoppen*/
 
 a {
 	padding: 10px 15px;
@@ -66,14 +67,22 @@ a#next {
 	border-bottom-left-radius: 10px;
 }
 
-img {
-	max-width: 100%;
+/*houder van ale foto's en de knoppen*/
+
+section {
+	width: 65%;
+	margin: 0 auto;
+	position: relative;
 }
+
+/*container van alle stippen*/
 
 .container {
 	text-align: center;
 	margin: 6px;
 }
+
+/*de stippen onder de weergeven foto*/
 
 .dot {
 	width: 6px;
@@ -85,6 +94,8 @@ img {
 	display: inline-block;
 	transition: all 0.6s ease;
 }
+
+/*als de stip de class active krijgt wordt hij groter en donker*/
 
 .active {
 	opacity: 1;
