@@ -2,7 +2,7 @@
 
 Voor de tweede opdracht moesten we een functionaliteit uitwerken die je kan bedienen met 'click' en nog een andere user interactie.
 
-Voor mijn ontwerp heb ik een caroussel gemaakt die te bedienen is door op de pijlen verder en terug te klikken, maar ook met de 'verder' en 'terug' pijlen op je toetsenbord.
+Voor mijn ontwerp heb ik een caroussel gemaakt die te bedienen is door op de pijlen 'verder' en 'terug' te klikken met je muis, maar ook met de 'verder' en 'terug' pijlen op je toetsenbord.
 
 Voor mijn eerste versie heb ik alle img samen met de knoppen in een section gedaan. Doormiddel van te tellen met variabele huidigImg ben ik mijn Javascript gaan uitwerken. Als er op volgende werd geklikt werd er 1 bij opgeteld, en bij vorige 1 afgehaald. Daarna werden voor alle andere img de class show verwijdert en voor de juiste img de class show toegevoegd.
 
