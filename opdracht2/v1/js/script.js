@@ -11,12 +11,12 @@ var next = document.querySelector('#next');
 /*De variabele huidigeImg wordt gebruikt om te tellen welke img moet worden weergeven*/
 var huidigeImg = 1;
 
-function volgendeImg(sel) {
-	weergeefImg(huidigeImg += sel); /*huidige img wordt 1 bij opgeteld en met die nieuwe waarde word de functie weergeefImg uitgevoerd*/
+function volgendeImg() {
+	weergeefImg(huidigeImg += 1); /*huidige img wordt 1 bij opgeteld en met die nieuwe waarde word de functie weergeefImg uitgevoerd*/
 }
 
-function vorigeImg(sel) {
-	weergeefImg(huidigeImg -= sel); /*huidige img wordt 1 afgehaald en met die nieuwe waarde word de functie weergeefImg uitgevoerd*/
+function vorigeImg() {
+	weergeefImg(huidigeImg -= 1); /*huidige img wordt 1 afgehaald en met die nieuwe waarde word de functie weergeefImg uitgevoerd*/
 }
 
 function weergeefImg(sel) {
@@ -33,11 +33,11 @@ function weergeefImg(sel) {
 	if (sel < 1) {
 		huidigeImg = alleImg.length
 	};
-	/*de class show word van alle Img verwijdert*/
+	/*de class show wordt van de vorig weergeven img verwijdert*/
 	for (i = 0; i < alleImg.length; i++) {
 		alleImg[i].classList.remove('show');
 	}
-	/*de active show word van alle dots verwijdert*/
+	/*de class active wordt van de vorig weergeven dots verwijdert*/
 	for (i = 0; i < alleDots.length; i++) {
 		alleDots[i].classList.remove('active');
 	}
@@ -47,21 +47,17 @@ function weergeefImg(sel) {
 }
 
 /*Als de eerste knop word geklikt, word de functie vorigeImg uitgevoerd*/
-previous.addEventListener('click', function () {
-	vorigeImg(1);
-});
+previous.addEventListener('click', vorigeImg);
 
 /*Als de tweede knop word geklikt, word de functie volgendeImg uitgevoerd*/
-next.addEventListener('click', function () {
-	volgendeImg(1);
-});
+next.addEventListener('click', volgendeImg);
 
 /*als de pijl terug word aangeklikt, word vorigeImg uitgevoerd, als de pijl verder word aangeklikt, word volgendeImg uitgevoerd*/
 document.addEventListener('keydown', function (event) {
 	if (event.keyCode === 39) {
-		volgendeImg(1);
+		volgendeImg();
 	}
 	if (event.keyCode === 37) {
-		vorigeImg(1);
+		vorigeImg();
 	}
 });
