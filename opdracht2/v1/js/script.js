@@ -34,13 +34,9 @@ function weergeefImg(sel) {
 		huidigeImg = alleImg.length
 	};
 	/*de class show wordt van de vorig weergeven img verwijdert*/
-	for (i = 0; i < alleImg.length; i++) {
-		alleImg[i].classList.remove('show');
-	}
+	document.querySelector('.show').classList.remove('show');
 	/*de class active wordt van de vorig weergeven dots verwijdert*/
-	for (i = 0; i < alleDots.length; i++) {
-		alleDots[i].classList.remove('active');
-	}
+	document.querySelector('.active').classList.remove('active');
 	/*de img en dot die op dat moment moeten worden weergeven krijgen de juiste class, -1 omdat de array begint bij 0*/
 	alleImg[huidigeImg - 1].classList.add('show');
 	alleDots[huidigeImg - 1].classList.add('active');
