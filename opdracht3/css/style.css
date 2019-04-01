@@ -7,27 +7,28 @@ body {
 }
 
 header + img {
-
-	width: 100%;
+	width: 170%;
 	position: absolute;
 	top: 0em;
+	left: -5em;
 	z-index: 1;
 }
 
 header {
-	width: 100%;
+	width: 200%;
 	height: 6em;
 	background-color: #8090A7;
 	z-index: 0.5;
-	margin-bottom: 50em;
+	margin-bottom: 65em;
 }
 
 div {
 	margin: 0 5%;
+	width: 200%;
 }
 
 h1 {
-	font-size: 19px;
+	font-size: 40px;
 	color: #08174F;
 }
 
@@ -38,7 +39,7 @@ h2 {
 
 button {
 	font-family: 'Antraste';
-	font-size: 1em;
+	font-size: 2em;
 	background-color: #849AC1;
 	color: #F2F2F2;
 	padding: 0.7em 1em 0.5em;
@@ -51,22 +52,16 @@ button:hover {
 	background-color: #08174F;
 }
 
-button.active {
+button:focus {
 	background-color: #08174F;
 }
 
 section {
+	width: 140%;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	margin: 2em 5% 0;
-}
-
-p {
-	display: none;
-}
-
-p.show {
-	display: block;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2em;
+	margin: 4em 5% 0;
 }
 
 article {
@@ -86,4 +81,35 @@ p {
 	color: #F2F2F2;
 	font-family: 'HK Grotesk';
 	font-weight: Bold;
+	max-width: 13em;
+	padding-left: 0.5em;
+}
+
+
+@media(min-width: 70em) {
+	header + img {
+		width: 100%;
+		position: absolute;
+		top: 0em;
+		z-index: 1;
+	}
+
+	h1 {
+		font-size: 19px;
+	}
+
+	p {
+		max-width: 30em;
+		padding: 0;
+	}
+
+	button {
+		font-size: 1em;
+	}
+
+	section {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin: 2em 5% 0;
+	}
 }
