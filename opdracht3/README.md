@@ -14,4 +14,4 @@ Ik heb de functionaliteit getest en hieruit kwamen de volgende punten:
 
 Deze feedback heb ik verwerkt in mijn volledige versie.
 
-Demo voor opdracht 2: https://rianneeh.github.io/Frontend-for-designers/opdracht2/v1/index.html
+Demo voor opdracht 2: https://rianneeh.github.io/Frontend-for-designers/opdracht3/index.html
