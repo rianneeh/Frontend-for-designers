@@ -1,4 +1,4 @@
-# frontend voor designers - opdracht 3
+# Frontend voor Designers - opdracht 3
 
 Voor de derde opdracht moesten we een complexe functionaliteit met externe data uitwerken en testen.
 
