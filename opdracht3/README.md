@@ -10,8 +10,13 @@ Ik wilde eigelijk een algemene functie schrijven die ik kon koppelen aan alle vi
 
 Om deze reden heb ik voor alle vier de knoppen een aparte functie moeten schrijven waarbij ik bijvoorbeeld .population en .nickname achter staten[j] zette en hiermee de textcontent van de p kon aanpassen.
 
-Ik heb de functionaliteit getest en hieruit kwamen de volgende punten:
+Demo voor de eerste versie: https://rianneeh.github.io/Frontend-for-designers/opdracht3/v1/index.html
+
+Ik heb de functionaliteit getest(zie foto) en hieruit kwamen de volgende punten:
+ - Op desktopformaat is het niet gelijk duidelijk dat de 'data laden' knop geklikt moet worden, omdat je eerst moet scrollen voor hij in beeld komt. De 'data laden' knop zou dus gelijk in beeld moeten staan.
+ - Ook wanneer de data weergeven word moet er een klein deel al in beeld zijn, dan word de gebruiker getriggerd om verder te scrollen.
+ - De uitleg van het UI event dat je kunt klikken op toetsen op het toetsenbord is niet begrijpelijk voor de gebruiker. Deze tekst moet aangepast worden (leg het uit met een voorbeeld en onderstreep de eerste letter van de knoppen).
 
 Deze feedback heb ik verwerkt in mijn volledige versie.
 
-Demo voor opdracht 3: https://rianneeh.github.io/Frontend-for-designers/opdracht3/index.html
+Demo voor uiteindelijke versie: https://rianneeh.github.io/Frontend-for-designers/opdracht3/v2/index.html
