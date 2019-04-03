@@ -30,6 +30,8 @@ div {
 }
 
 div p {
+	font-family: 'HK grotesk';
+	font-weight: bold;
 	color: #08174F;
 	font-size: 14px;
 	max-width: 25em;
@@ -64,8 +66,13 @@ button:focus {
 	background-color: #08174F;
 }
 
-button:first-of-type {
+button:first-letter {
+	text-decoration: underline;
+}
+
+button:first-of-type:first-letter {
 	display: block;
+	text-decoration: none;
 	margin: 0 auto 2em;
 }
 
@@ -158,8 +165,8 @@ span img {
 	}
 
 	div p {
-		font-size: 1.2em;
-		max-width: 40em
+		font-size: 1.1em;
+		max-width: 40em;
 	}
 
 	article p {

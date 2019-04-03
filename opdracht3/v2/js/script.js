@@ -17,7 +17,7 @@ function showStaten(jsonObj) { //functie voor superhelden
 
 	//BUTTONS
 	var h1Section = document.createElement('h1');
-	h1Section.textContent = "Klik om informatie per staat te weergeven: ";
+	h1Section.textContent = "Ontdek informatie per staat: ";
 	var inwonersbutton = document.createElement('button');
 	inwonersbutton.textContent = "Inwoners";
 	var bijnaambutton = document.createElement('button');
@@ -27,7 +27,7 @@ function showStaten(jsonObj) { //functie voor superhelden
 	var stadbutton = document.createElement('button');
 	stadbutton.textContent = "Hoofdstad";
 	var pInfo = document.createElement('p');
-	pInfo.textContent = "Klik op een van de buttons of de eerste letter van de knop op het toetsenbord om de informatie bij de staten te weergeven.";
+	pInfo.textContent = "Klik op een van de buttons om deze informatie bij de staten te weergeven. Ook kun je op je toetsenbord op de eerste letter van het soort informatie klikken, om het te weergeven. Bijvoorbeeld: I -> inwoners.";
 
 	div.appendChild(h1Section);
 	div.appendChild(pInfo);
