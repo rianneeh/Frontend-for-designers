@@ -4,29 +4,18 @@
 
 /*eslint 'no-console': 0*/
 
-console.log('hoi');
-
 var button = document.querySelector("button");
 var section = document.querySelector('section');
+var div = document.querySelector('div');
 var laadElement = document.querySelector('span');
 
 var requestURL = 'https://raw.githubusercontent.com/CivilServiceUSA/us-states/master/data/states.json'; //bewaar de URL van de JSON in een variabele
-var request = new XMLHttpRequest(); //maak een nieuw request
-request.open('GET', requestURL); //open dit request met de juiste variabele, requestURL
-request.responseType = 'json'; //zo weet de XHR dat de server een JSON terugkrijgt die moet worden omgezet naar JS object
-request.send(); //verstuur het verzoek naar de server
-
-request.onload = function () { //wachten op een response van de server en dat verwerken, eventhandler die gaat als het load event actief is op de request, de request zal dan succesvol zijn(request.response)
-	var datainhoud = request.response; //de response slaan we op in de variabele
-	showStaten(datainhoud); //functie die zorgt dat de section word gevult met juiste superhelden
-}
 
 function showStaten(jsonObj) { //functie voor superhelden
 	var staten = jsonObj;
 	console.log("show data alle Staten:", staten);
 
 	//BUTTONS
-	var div = document.querySelector('div');
 	var h1Section = document.createElement('h1');
 	h1Section.textContent = "Klik om informatie per staat te weergeven: ";
 	var inwonersbutton = document.createElement('button');
@@ -134,3 +123,29 @@ function showStad(b) {
 		p.textContent = 'HOOFDSTAD: ' + staten[m].capital_city;
 	}
 }
+
+function contentInladen() {
+	var request = new XMLHttpRequest(); //maak een nieuw request
+	request.open('GET', requestURL); //open dit request met de juiste variabele, requestURL
+	request.responseType = 'json'; //zo weet de XHR dat de server een JSON terugkrijgt die moet worden omgezet naar JS object
+	request.send(); //verstuur het verzoek naar de server
+
+	request.addEventListener("load", function () {
+		setTimeout(function () {
+			laadElement.classList.remove('show');
+			var datainhoud = request.response; //de response slaan we op in de variabele
+			showStaten(datainhoud); //functie die zorgt dat de section word gevult met juiste superhelden
+		}, 3000)
+	});
+
+	request.onerror = function () {
+		console.log('Fetch Error', request.status);
+	};
+}
+
+//Eerste actie: button laad data
+button.onclick = function () {
+	laadElement.classList.add('show');
+	section.innerHTML = ""; //haal voor de zekerheid inhoud uit de section
+	contentInladen();
+};
